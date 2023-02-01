@@ -68,6 +68,9 @@ lvim.keys.normal_mode["<M-j>"] = nil
 lvim.keys.normal_mode["<M-Up>"] = ":m .-2<CR>"
 lvim.keys.normal_mode["<M-Down>"] = ":m .+1<CR>"
 
+--Additional delete line command
+lvim.keys.normal_mode["<c-x>"] = ":d<CR>"
+
 --Space + / (comment / uncomment)
 keymap("n", "<leader>/", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>", opts)
 
